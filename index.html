@@ -2,13 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simple DevOps Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Vision Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My DevOps Project!</h1>
-    <button id="btn">Click Me</button>
-    <p id="message"></p>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-camera-retro"></i>
+                <span>Artistic Vision</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Discover Beautiful Photography</h1>
+            <p>Explore our curated collection of stunning images from talented photographers around the world. Each picture tells a unique story.</p>
+            <a href="#gallery" class="btn">View Gallery</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2 class="section-title">Photo Gallery</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="urban">Urban</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="travel">Travel</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery">
+                <!-- Gallery items will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Our Gallery</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>Artistic Vision Gallery is dedicated to showcasing breathtaking photography from both established and emerging artists. We believe in the power of images to inspire, educate, and connect people across cultures and borders.</p>
+                    <p>Our collection is carefully curated to represent diverse perspectives and techniques, from traditional film photography to cutting-edge digital art. We're passionate about supporting photographers and bringing their work to a wider audience.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Photographer at work">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img class="lightbox-img" src="" alt="">
+            <div class="lightbox-info"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Artistic Vision Gallery</h3>
+                    <p>Discover the world through the lens of talented photographers. Join us in celebrating visual storytelling.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Gallery Street, Art City, AC 10001</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@artisticvision.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Artistic Vision Gallery. All rights reserved. | Designed with <i class="fas fa-heart"></i> for photography lovers</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
